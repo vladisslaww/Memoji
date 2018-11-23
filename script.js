@@ -98,7 +98,7 @@ function time (timer){
   var timeLeft = 60;
   var timeInterval = setInterval(function(){
     if (document.querySelectorAll('.success').length == 12){
-      clearInterval('timeInterval');      
+      clearInterval(timeInterval);      
     }
     if (timeLeft > 10){
       timeLeft -= 1;
