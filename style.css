@@ -32,12 +32,18 @@ section{
 	transition: transform 0.6s;
 	transform-style: preserve-3d;
 	z-index: 2;
+	cursor: pointer;
+}
+
+.inner .frontside:hover{
+	background: linear-gradient(45deg, #22AB93 30%, #19668D 100%);
 }
 
 /*Rotation*/
 
 .inner-rotate{
 	transform: rotateY(180deg);
+	cursor: default;
 }
 
 .frontside, .backside {

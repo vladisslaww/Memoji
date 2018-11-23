@@ -97,6 +97,9 @@ function time (timer){
   timer.innerHTML = '01:00'
   var timeLeft = 60;
   var timeInterval = setInterval(function(){
+    if (document.querySelectorAll('.success').length == 12){
+      clearInterval('timeInterval');      
+    }
     if (timeLeft > 10){
       timeLeft -= 1;
       timer.innerHTML = '00:' + timeLeft;
