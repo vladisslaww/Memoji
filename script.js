@@ -125,4 +125,9 @@ function lose(){
   document.getElementById('pop_up').classList.add('show_pop_up');
   document.getElementById('timer').classList.remove('timer_show');
   document.querySelector('#pop_up h2').innerHTML = '<span>L</span><span>o</span><span>s</span><span>e</span>';
+  for (var i = 0; i < innerCards.length; i++){
+  	if (!innerCards[i].classList.contains('inner-rotate' && 'failure' && 'success')){
+  		innerCards[i].classList.add('inner-rotate');
+  	}
+  }
 }
